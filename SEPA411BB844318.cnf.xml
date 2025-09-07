@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Default>
   <loadInformation>sip88xx.12-0-7MPP0201-66</loadInformation>
+
+  <sipProfile>
+    <sipProxies>
+      <outboundProxy>sip.linphone.org</outboundProxy>
+      <outboundProxyPort>5061</outboundProxyPort>
+      <registerWithProxy>true</registerWithProxy>
+    </sipProxies>
+
+    <lines>
+      <line button="1">
+        <featureID>9</featureID>
+        <featureLabel>GarnetAlliance</featureLabel>
+        <proxy>sip.linphone.org</proxy>
+        <port>5061</port>
+        <name>garnetalliance</name>
+        <displayName>Garnet Alliance</displayName>
+        <authName>garnetalliance</authName>
+        <authPassword>nemDus-zyrtyj-3vetza</authPassword>
+        <messagesNumber>*97</messagesNumber>
+      </line>
+    </lines>
+  </sipProfile>
+
+  <commonProfile>
+    <phonePassword></phonePassword>
+  </commonProfile>
+
+  <deviceSecurityMode>1</deviceSecurityMode>
+  <transportLayerProtocol>4</transportLayerProtocol> <!-- 4 = TLS -->
 </Default>
